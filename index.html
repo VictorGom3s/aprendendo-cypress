@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>End to End</title>
+  </head>
+  <body>
+    <h1>Hello Cypress</h1>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Your first name</label>
+        <input type="text" id="name" placeholder="John" value="" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your e-mail</label>
+        <input type="email" id="email" placeholder="john@doe.com" />
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+  <script>
+    function submitForm() {
+      const form = document.querySelector("form");
+      const tbody = document.querySelector("tbody");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        alert("executou");
+
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+
+        console.log(name, email);
+
+        tbody.innerHTML += `<tr>
+                              <td>${name}</td>
+                              <td>${email}</td>
+                            </tr>`;
+      });
+    }
+
+    submitForm();
+  </script>
+</html>
