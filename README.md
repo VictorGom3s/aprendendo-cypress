@@ -26,4 +26,4 @@
 
 ## Abrir o cypress
 
-`$ npx open cypress`
+`$ npx cypress open`
