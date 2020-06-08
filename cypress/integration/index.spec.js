@@ -10,7 +10,7 @@ describe("The page must contain a title", () => {
   });
 
   it("Check if there's an H1 element", () => {
-    cy.get("h1").should("contain", "Hello Cypress");
+    cy.get("h1").should("contain", "Add Users");
   });
 });
 
@@ -21,14 +21,14 @@ describe("Submit the form with valid values", () => {
   });
 
   it("Should have a submit button", () => {
-    cy.get("button").should("be.visible");
+    cy.get("button.is-primary").should("be.visible");
   });
 
   it("On form submit, the values must be listed in the table", () => {
     cy.get("#name").type("Victor");
     cy.get("#email").type("vsampaio@pm.me");
 
-    cy.get("button").click();
+    cy.get("button.is-primary").click();
 
     cy.get("tbody")
       .should("contain", "Victor")
