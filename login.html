@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="section is-large level">
+      <div class="container level-item">
+        <div class="card">
+          <div class="notification is-danger" style="display: none;">
+            <button
+              class="delete"
+              onclick="javascript: this.parentElement.remove()"
+            ></button>
+            Usuário ou senha incorretos
+          </div>
+          <div class="card-content">
+            <h1 class="title">Log In</h1>
+            <hr />
+            <form>
+              <div class="field">
+                <label class="label" for="name">Username</label>
+                <div class="control">
+                  <input
+                    class="input is-medium"
+                    type="text"
+                    id="username"
+                    placeholder="admin"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="name">Password</label>
+                <div class="control">
+                  <input
+                    class="input is-medium"
+                    type="password"
+                    id="password"
+                    placeholder="admin"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="login.js"></script>
+</html>

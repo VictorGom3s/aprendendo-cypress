@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   return res.sendFile("index.html", { root: __dirname });
 });
 
+app.get("/login", (req, res) => {
+  return res.sendFile("login.html", { root: __dirname });
+});
+
 app.listen("8080", () => {
   console.log("End to End testing example app is running");
 });

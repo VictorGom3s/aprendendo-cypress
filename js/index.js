@@ -1,3 +1,5 @@
+// TODO check if the user is already logged in
+
 function submitForm() {
   const form = document.querySelector("form");
   const tbody = document.querySelector("tbody");

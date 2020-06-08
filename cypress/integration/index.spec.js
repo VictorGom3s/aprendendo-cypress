@@ -25,13 +25,16 @@ describe("Submit the form with valid values", () => {
   });
 
   it("On form submit, the values must be listed in the table", () => {
-    cy.get("#name").type("Victor");
-    cy.get("#email").type("vsampaio@pm.me");
+    cy.get("#name").as("campoNome").type("Victor");
+    cy.get("#email").as("campoEmail").type("vsampaio@pm.me");
 
     cy.get("button.is-primary").click();
 
     cy.get("tbody")
       .should("contain", "Victor")
       .should("contain", "vsampaio@pm.me");
+
+    cy.get("@campoNome").clear();
+    cy.get("@campoEmail").clear();
   });
 });
