@@ -13,3 +13,17 @@
 - [ ] CLI
 - [ ] Continuous Integration
 - [ ] Web Security
+
+### Sobre o repositório
+
+## Instalação
+
+`$ npm install`
+
+## Rodar o app
+
+`$ npm start`
+
+## Abrir o cypress
+
+`$ npx open cypress`
