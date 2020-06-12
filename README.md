@@ -5,9 +5,11 @@
 - [x] Instalar o Cypress.
 - [x] Realizar exemplos básicos da documentação.
 - [x] Interagindo com elementos no DOM.
-- [ ] Interagindo com formulários.
-- [ ] Navegação.
 - [x] Asserts
+- [x] Interagindo com formulários.
+- [ ] Navegação.
+- [ ] Teste de Integração
+- [ ] Testes Unitários
 - [ ] Organização de testes
 - [ ] Variáveis e Aliases
 - [ ] CLI
@@ -20,10 +22,10 @@
 
 `$ npm install`
 
-## Rodar o app
+## Iniciar servidor local
 
 `$ npm start`
 
 ## Abrir o cypress
 
-`$ npx cypress open`
+`$ npm run e2e`
