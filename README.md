@@ -4,10 +4,10 @@
 
 - [x] Instalar o Cypress.
 - [x] Realizar exemplos básicos da documentação.
-- [ ] Interagindo com elementos no DOM.
+- [x] Interagindo com elementos no DOM.
 - [ ] Interagindo com formulários.
 - [ ] Navegação.
-- [ ] Asserts
+- [x] Asserts
 - [ ] Organização de testes
 - [ ] Variáveis e Aliases
 - [ ] CLI
