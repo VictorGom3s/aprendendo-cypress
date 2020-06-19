@@ -7,14 +7,13 @@
 - [x] Interagindo com elementos no DOM.
 - [x] Asserts
 - [x] Interagindo com formulários.
-- [ ] Navegação.
-- [ ] Teste de Integração
-- [ ] Testes Unitários
-- [ ] Organização de testes
-- [ ] Variáveis e Aliases
-- [ ] CLI
-- [ ] Continuous Integration
-- [ ] Web Security
+- [x] Navegação.
+- [x] Organização de testes
+- [x] Variáveis e Aliases
+- [x] Plugins
+- [x] CLI
+- [x] Teste de Integração
+- [x] Testes Unitários
 
 ### Sobre o repositório
 
@@ -29,3 +28,7 @@
 ## Abrir o cypress
 
 `$ npm run e2e`
+
+## Rodar os testes via CLI
+
+`$ npm test`
